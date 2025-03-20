@@ -1,17 +1,4 @@
 <script setup>
-<<<<<<< HEAD
-import Principal from './components/Principal.vue'
-</script>
-
-<template>
-  <div>
-  </div>
-  <Principal msg="Vite + Vue" />
-</template>
-
-<style scoped>
-
-=======
 import Header from './components/Header.vue'
 import ProductList from './components/ProductList.vue'
 import Footer from './components/Footer.vue'
@@ -54,5 +41,4 @@ main {
   flex-grow: 1;
   padding: 20px;
 }
->>>>>>> main
 </style>
