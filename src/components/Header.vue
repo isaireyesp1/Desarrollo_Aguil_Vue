@@ -1,6 +1,6 @@
 <template>
   <header>
-    
+
       <a class="tim">Tim.Shop</a> 
     
     <nav>
@@ -23,6 +23,10 @@
 </template>
 
 <style scoped>
+template{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +53,7 @@ nav ul li a {
 a.tim {
   text-decoration: none;
   color: #FFFFFF; /* Texto blanco */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 25px;
 }
