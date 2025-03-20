@@ -1,40 +1,40 @@
 <template>
-            <div class="row mt-4">
-            <!-- BICICLETA -->
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-            <img src="/img/bici.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <p class="card-text">Una bicicleta debe afrontar todo tipo de retos y debe estar a la altura de su comprador, directamente desde Alemania y con los mejores
-                    materiales, esta bicicleta esta a la espera de una muy buena oferta.
-                  </p>
-                  <button class="btn btn-warning">COMPRAR</button>
-                </div>
-                </div>
+<div class="row mt-4">
+    <!-- AUDI -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm rounded-3" style="background-color: #293241;">
+            <img src="/img/Autos/audiUno.jpg" class="card-img-top" alt="Audi Car" style="height: 250px; width: 100%; object-fit: cover;">
+            <div class="card-body text-center text-white">
+                <p class="card-text">
+                    Audi es sinónimo de lujo y tecnología avanzada. Esta es una opción ideal para quienes buscan elegancia, confort y desempeño, directamente desde Alemania.
+                </p>
+                <button class="btn" style="background-color: white; color: #293241;">COMPRAR</button>
             </div>
-            <!-- MERCEDES BENZ -->
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-            <img src="/img/mb.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <p class="card-text">Un buen caballero necesita un buen carro, ¿Que más le
-                    puedo decir?
-                  </p>
-                  <button class="btn btn-warning">COMPRAR</button>
-                </div>
-                </div>
+        </div>
+    </div>
+    <!-- MERCEDES BENZ -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm rounded-3" style="background-color: #293241;">
+            <img src="/img/Autos/mb.jpg" class="card-img-top" alt="Mercedes Benz" style="height: 250px; width: 100%; object-fit: cover;">
+            <div class="card-body text-center text-white">
+                <p class="card-text">
+                    Mercedes-Benz, el epítome del lujo, confort y tecnología avanzada. Un verdadero placer para los conocedores del automovilismo de lujo.
+                </p>
+                <button class="btn" style="background-color: white; color: #293241;">COMPRAR</button>
             </div>
-            <!-- DISCO RADIOHEAD -->
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-            <img src="/img/oc.jpeg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <p class="card-text">Uno de los mayores exitos de la banda, no todos tienen
-                    la dicha de tener uno de estos en su colección.
-                  </p>
-                  <button class="btn btn-warning">COMPRAR</button>
-                </div>
-                </div>
+        </div>
+    </div>
+    <!-- BMW -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm rounded-3" style="background-color: #293241;">
+            <img src="/img/Autos/BMW.jpg" class="card-img-top" alt="BMW Car" style="height: 250px; width: 100%; object-fit: cover;">
+            <div class="card-body text-center text-white">
+                <p class="card-text">
+                    BMW ofrece una experiencia de conducción única con diseño innovador y alta performance. Ideal para los entusiastas de los autos deportivos y de lujo.
+                </p>
+                <button class="btn" style="background-color: white; color: #293241;">COMPRAR</button>
             </div>
-        </div> 
+        </div>
+    </div>
+</div>
 </template>
