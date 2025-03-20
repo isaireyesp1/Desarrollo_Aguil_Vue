@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="logo">
-      <img src="./assets/logo.png" alt="Tim.Shop Logo" />
-    </div>
+
+      <a class="tim">Tim.Shop</a> 
+    
     <nav>
       <ul>
         <li><a href="#">Categorías</a></li>
@@ -23,6 +23,10 @@
 </template>
 
 <style scoped>
+template{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -45,6 +49,13 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF; /* Texto blanco */
+}
+a.tim {
+  text-decoration: none;
+  color: #FFFFFF; /* Texto blanco */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .search-cart {

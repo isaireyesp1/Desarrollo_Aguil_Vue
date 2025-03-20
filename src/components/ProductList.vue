@@ -33,6 +33,7 @@ const products = ref([
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .product-card {
