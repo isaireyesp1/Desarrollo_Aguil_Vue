@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="logo">
-      <img src="./assets/logo.png" alt="Tim.Shop Logo" />
-    </div>
+    
+      <a class="tim">Tim.Shop</a> 
+    
     <nav>
       <ul>
         <li><a href="#">Categorías</a></li>
@@ -45,6 +45,13 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF; /* Texto blanco */
+}
+a.tim {
+  text-decoration: none;
+  color: #FFFFFF; /* Texto blanco */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .search-cart {
