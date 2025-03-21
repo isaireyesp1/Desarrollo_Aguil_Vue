@@ -19,7 +19,8 @@ const products = ref([
   { id: 5, name: 'Zapatos', price: '$1,500.00 MXN', image: './Productos/zapatos.webp' },
   { id: 6, name: 'Chamarra de cuero', price: '$3,500.00 MXN', image: './Productos/chamarra.png' },
   { id: 7, name: 'Guayabera', price: '$1,200.00 MXN', image: './Productos/guayavera.png' },
-  { id: 8, name: 'Botas vaqueras', price: '$2,000.00 MXN', image: './Productos/Botas.webp' }
+  { id: 8, name: 'Botas vaqueras', price: '$2,000.00 MXN', image: './Productos/Botas.webp' },
+  { id: 9, name: 'Huypil', price: '$12,000.00 MXN', image: './Productos/Huypil.png' }
 ])
 </script>
 
