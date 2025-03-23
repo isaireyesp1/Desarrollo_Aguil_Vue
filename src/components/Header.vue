@@ -1,87 +1,73 @@
 <template>
-  <header>
-
-      <a class="tim">Tim.Shop</a> 
-    
-    <nav>
-      <ul>
-        <li><a href="#">Categorías</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Historial</a></li>
-        <li><a href="#">Lo más vendido</a></li>
-        <li><a href="#">Lo nuevo</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Ayuda</a></li>
-      </ul>
-    </nav>
-    <div class="search-cart">
-      <input type="text" placeholder="Buscar..." />
-      <button>Buscar</button>
-      <a href="#">Carrito</a>
-    </div>
-  </header>
-</template>
-
-<style scoped>
-template{
-
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    <header>
+      <div class="logo">TimShop</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos..." />
+        <button>🔍</button>
+      </div>
+      <div class="user-cart">
+        <button>👤 Usuario</button>
+        <button @click="goToCart">🛒 Carrito</button>
+      </div>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Header',
+    methods: {
+      goToCart() {
+        this.$router.push("/cart");
+      }
+    }
+  };
+  </script>
+  
+  <style scoped>
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #333333; /* Fondo gris oscuro */
-  border-bottom: 1px solid #444444; /* Borde gris más oscuro */
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #eee;
+  width: 130%; /* Hace que el header ocupe todo el ancho disponible */
 }
-
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
-}
-a.tim {
-  text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.search-cart {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search-cart input {
-  padding: 5px;
-  border: 1px solid #444444; /* Borde gris más oscuro */
-  border-radius: 4px;
-  background-color: #333333; /* Fondo gris oscuro */
-  color: #FFFFFF; /* Texto blanco */
-}
-
-.search-cart button {
-  padding: 5px 10px;
-  background-color: #000000; /* Fondo negro */
-  color: #FFFFFF; /* Texto blanco */
-  border: none;
-  cursor: pointer;
-}
-
-.search-cart a {
-  text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
-}
-</style>
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .user-cart button {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  </style>
+  
