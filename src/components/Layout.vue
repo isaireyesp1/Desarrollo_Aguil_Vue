@@ -4,7 +4,7 @@
       <Sidebar />
       <main class="content">
         <slot></slot> 
-        <Recorrido /> 
+        <Horario /> <!-- Tabla de alumnos -->
       </main>
       <Footer />
     </div>
@@ -14,7 +14,8 @@
   import Header from "./Header.vue";
   import Sidebar from "./Sidebard.vue";
   import Footer from "./Footer.vue";
-  import Recorrido from "./Recorrido.vue"; // Asegúrate de importar correctamente
+  //import Recorrido from "./Recorrido.vue"; 
+  import Horario from "./Horario.vue"; 
   
   export default {
     name: "Layout",
@@ -22,7 +23,7 @@
       Header,
       Sidebar,
       Footer,
-      Recorrido
+      Horario
     },
     methods: {
       goToCart() {
@@ -31,7 +32,6 @@
     }
   };
   </script>
-  
   <style scoped>
   .layout {
     display: flex;
