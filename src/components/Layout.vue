@@ -4,7 +4,7 @@
       <Sidebar />
       <main class="content">
         <slot></slot> 
-        <Horario /> <!-- Tabla de alumnos -->
+        <list /> <!-- Tabla de alumnos -->
       </main>
       <Footer />
     </div>
@@ -16,6 +16,7 @@
   import Footer from "./Footer.vue";
   //import Recorrido from "./Recorrido.vue"; 
   import Horario from "./Horario.vue"; 
+  import list from "./ProductList.vue"; 
   
   export default {
     name: "Layout",
@@ -23,7 +24,7 @@
       Header,
       Sidebar,
       Footer,
-      Horario
+      list
     },
     methods: {
       goToCart() {
