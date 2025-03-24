@@ -1,23 +1,23 @@
 <template>
-    <!--
+ 
     <div class="layout">
       <Header @goToCart="goToCart" />
       <Sidebar />
       <main class="content">
         <slot></slot> 
-        <Horario /> 
+        <Recorrido /> 
       </main>
       <Footer />
     </div>
--->
-  <Gatos />
+
+
   </template>
   
   <script>
   import Header from "./Header.vue";
   import Sidebar from "./Sidebard.vue";
   import Footer from "./Footer.vue";
-  //import Recorrido from "./Recorrido.vue"; 
+  import Recorrido from "./Recorrido.vue"; 
   import Horario from "./Horario.vue"; 
   import list from "./ProductList.vue"; 
   import Gatos from "./Gatitos.vue"; 
@@ -29,7 +29,9 @@
       Sidebar,
       Footer,
       Horario,
-      Gatos
+      Gatos,
+      list,
+      Recorrido
     },
     methods: {
       goToCart() {

@@ -24,7 +24,7 @@
     data() {
       return {
         products: [
-          { name: "Collar de madera", description: "Hecho a mano con materiales naturales.", price: 25, image: "https://via.placeholder.com/150" },
+          { name: "Collar de madera", description: "Hecho a mano con materiales naturales.", price: 25, image: "https://i.pinimg.com/originals/37/d0/de/37d0de986c8244f8715445eda9370718.jpg" },
           { name: "Bolsa artesanal", description: "Tejida con fibras naturales.", price: 40, image: "https://via.placeholder.com/150" },
           { name: "Pulsera tejida", description: "Diseño único y colores vibrantes.", price: 15, image: "https://via.placeholder.com/150" }
         ]
