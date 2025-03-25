@@ -4,13 +4,15 @@ import ProductList from './components/ProductList.vue'
 import Footer from './components/Footer.vue'
 import Eventos from './components/Eventos/Eventos.vue'
 import Eventos2 from './components/Eventos/Evento2.vue'
+import Calculadora from './components/Calculadora.vue'
+
 </script>
 
 <template>
   <div class="main-container">
     <Header />
     <main>
-      <Eventos />
+      <Calculadora />
     </main>
     <Footer />
   </div>
