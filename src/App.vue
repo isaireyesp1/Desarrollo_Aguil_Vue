@@ -1,15 +1,8 @@
-<template>
-  <Layout>
-    <router-view />
-  </Layout>
-</template>
-
-<script>
-import Layout from "./components/Layout.vue";
-
-export default {
-  components: {
-    Layout
-  }
-};
+<script setup>
+import Hora from './components/Horario.vue'
 </script>
+<template>
+  <Hora/>
+</template>
+<style scoped>
+</style>

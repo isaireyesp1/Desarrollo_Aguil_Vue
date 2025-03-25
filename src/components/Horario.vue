@@ -1,102 +1,62 @@
 <template>
-    <div class="horario">
-      <h1>Horario de la Semana</h1>
-      <table class="tabla-horario">
-        <thead>
+  <div class="container">
+    <h3 class="mt-4 text-center fw-bold">Horario de Clases 8US</h3>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark text-center">
           <tr>
-            <th>Hora</th>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miércoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-            <th>Sábado</th>
-            <th>Domingo</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miércoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">Viernes</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(hora, index) in horas" :key="index">
-            <td>{{ hora }}</td>
-            <td v-for="dia in dias" :key="dia">
-              <span v-if="semana[dia][index]">{{ semana[dia][index] }}</span>
-              <span v-else>No disponible</span>
-            </td>
+          <tr v-for="(row, index) in horario" :key="index">
+            <td class="fw-bold text-center">{{ row.Hora }}</td>
+            <td class="text-center">{{ row.Lunes || '-' }}</td>
+            <td class="text-center">{{ row.Martes || '-' }}</td>
+            <td class="text-center">{{ row.Miercoles || '-' }}</td>
+            <td class="text-center">{{ row.Jueves || '-' }}</td>
+            <td class="text-center">{{ row.Viernes || '-' }}</td>
           </tr>
         </tbody>
       </table>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'Horario',
-    data() {
-      return {
-        horas: ['08:00 - 09:00', '09:00 - 10:00', '10:00 - 11:00', '11:00 - 12:00'],
-        dias: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
-        semana: {
-          Lunes: ['IA', 'Agil', 'IA', 'Agil'],
-          Martes: ['IA', 'Agil', 'IA', 'Agil'],
-          Miércoles: ['IA', 'Agil', 'IA', 'Agil'],
-          Jueves: ['IA', 'Agil', 'IA', 'Agil'],
-          Viernes: ['IA', 'Agil', 'IA', 'Agil'],
-          Sábado: ['IA', 'Agil', 'IA', 'Agil'],
-          Domingo: ['IA', 'Agil', 'IA', 'Agil'],
-        },
-      };
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .horario {
-    margin: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .tabla-horario {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tabla-horario th,
-  .tabla-horario td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  
-  .tabla-horario th {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .tabla-horario td {
-    background-color: #f9f9f9;
-  }
-  
-  .tabla-horario tr:nth-child(even) td {
-    background-color: #f2f2f2;
-  }
-  
-  .tabla-horario td span {
-    display: block;
-    padding: 8px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .tabla-horario td span:nth-child(odd) {
-    background-color: #c9f7dc;
-  }
-  </style>
-  
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const horario = ref([
+  { Hora: '7:00 AM - 8:00 AM', Lunes: 'Programación Lógica y Funcional', Martes: 'Inteligencia Artificial', Miercoles: 'Desarrollo Ágil', Jueves: 'Programación Lógica y Funcional', Viernes: '' },
+  { Hora: '8:00 AM - 9:00 AM', Lunes: 'Programación Lógica y Funcional', Martes: 'Inteligencia Artificial', Miercoles: 'Desarrollo Ágil', Jueves: 'Programación Lógica y Funcional', Viernes: '' },
+  { Hora: '9:00 AM - 10:00 AM', Lunes: 'Desarrollo Ágil', Martes: 'Administración de Redes', Miercoles: '', Jueves: 'Administración de Redes', Viernes: '' },
+  { Hora: '10:00 AM - 11:00 AM', Lunes: 'Desarrollo Ágil', Martes: 'Administración de Redes', Miercoles: '', Jueves: 'Administración de Redes', Viernes: 'Desarrollo Ágil' },
+  { Hora: '11:00 AM - 12:00 PM', Lunes: '', Martes: 'Desarrollo en la Nube', Miercoles: 'Desarrollo en la Nube', Jueves: 'Inteligencia Artificial', Viernes: 'Desarrollo en la Nube' },
+  { Hora: '12:00 PM - 1:00 PM', Lunes: '', Martes: 'Desarrollo en la Nube', Miercoles: 'Desarrollo en la Nube', Jueves: 'Inteligencia Artificial', Viernes: '' },
+  { Hora: '1:00 PM - 2:00 PM', Lunes: '', Martes: '', Miercoles: 'Desarrollo con Realidad Aumentada', Jueves: 'Desarrollo con Realidad Aumentada', Viernes: '' },
+  { Hora: '2:00 PM - 3:00 PM', Lunes: '', Martes: '', Miercoles: 'Desarrollo con Realidad Aumentada', Jueves: '', Viernes: 'Taller de Investigación II' },
+  { Hora: '3:00 PM - 4:00 PM', Lunes: '', Martes: 'Desarrollo con Realidad Aumentada', Miercoles: 'Taller de Investigación II', Jueves: '', Viernes: 'Taller de Investigación II' },
+  { Hora: '4:00 PM - 5:00 PM', Lunes: '', Martes: 'Desarrollo con Realidad Aumentada', Miercoles: 'Taller de Investigación II', Jueves: '', Viernes: '' }
+]);
+</script>
+
+<style scoped>
+/* Estilos adicionales para mejor presentación */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table th {
+  font-size: 1rem;
+}
+
+.table td {
+  font-size: 0.95rem;
+}
+</style>
