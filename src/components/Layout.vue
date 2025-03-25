@@ -5,7 +5,7 @@
       <Sidebar />
       <main class="content">
         <slot></slot> 
-        <Recorrido /> 
+        <Horario /> 
       </main>
       <Footer />
     </div>
