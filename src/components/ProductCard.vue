@@ -15,34 +15,34 @@ defineProps({
 
 <style scoped>
 .product-card {
-  border: 1px solid #444444; /* Borde gris más oscuro */
+  border: 1px solid #444444;
   padding: 10px;
   text-align: center;
-  width: 100%; /* Ajusta el ancho del contenedor de la tarjeta */
+  width: 100%; 
   box-sizing: border-box;
-  background-color: #000000; /* Fondo negro */
+  background-color: #000000; 
 }
 
 .product-card img {
   max-width: 100%;
   width: 100%;
-  height: 200px; /* Ajusta la altura de la imagen */
-  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+  height: 200px; 
+  object-fit: contain; 
 }
 
 .product-card h3 {
   margin: 10px 0;
-  color: #FFFFFF; /* Texto blanco */
+  color: #FFFFFF; 
 }
 
 .product-card p {
-  color: #FFFFFF; /* Texto blanco */
+  color: #FFFFFF;
 }
 
 .product-card button {
   padding: 5px 10px;
-  background-color: #FFFFFF; /* Fondo blanco */
-  color: #000000; /* Texto negro */
+  background-color: #FFFFFF; 
+  color: #000000; 
   border: none;
   cursor: pointer;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

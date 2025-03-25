@@ -32,8 +32,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333333; /* Fondo gris oscuro */
-  border-bottom: 1px solid #444444; /* Borde gris más oscuro */
+  background-color: #333333;
+  border-bottom: 1px solid #444444; 
 }
 
 .logo img {
@@ -48,11 +48,11 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
+  color: #FFFFFF; 
 }
 a.tim {
   text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
+  color: #FFFFFF; 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -66,22 +66,22 @@ a.tim {
 
 .search-cart input {
   padding: 5px;
-  border: 1px solid #444444; /* Borde gris más oscuro */
+  border: 1px solid #444444; 
   border-radius: 4px;
-  background-color: #333333; /* Fondo gris oscuro */
-  color: #FFFFFF; /* Texto blanco */
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 .search-cart button {
   padding: 5px 10px;
-  background-color: #000000; /* Fondo negro */
-  color: #FFFFFF; /* Texto blanco */
+  background-color: #000000; 
+  color: #FFFFFF; 
   border: none;
   cursor: pointer;
 }
 
 .search-cart a {
   text-decoration: none;
-  color: #FFFFFF; /* Texto blanco */
+  color: #FFFFFF; 
 }
 </style>

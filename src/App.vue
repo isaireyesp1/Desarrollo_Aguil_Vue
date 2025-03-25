@@ -2,13 +2,14 @@
 import Header from './components/Header.vue'
 import ProductList from './components/ProductList.vue'
 import Footer from './components/Footer.vue'
+import Eventos from './components/Eventos/Eventos.vue'
 </script>
 
 <template>
   <div class="main-container">
     <Header />
     <main>
-      <ProductList />
+      <Eventos />
     </main>
     <Footer />
   </div>
