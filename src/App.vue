@@ -3,6 +3,7 @@ import Header from './components/Header.vue'
 import ProductList from './components/ProductList.vue'
 import Footer from './components/Footer.vue'
 import Eventos from './components/Eventos/Eventos.vue'
+import Eventos2 from './components/Eventos/Evento2.vue'
 </script>
 
 <template>

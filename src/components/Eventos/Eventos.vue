@@ -29,7 +29,7 @@
               <option value="IM">Ingeniería Mecánica</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-success" >Agregar Alumno</button>
+          <button @click="Evento" type="submit" class="btn btn-success" >Agregar Alumno</button>
 
         </form>
       </div>
@@ -46,13 +46,42 @@
       <div v-else>
         <p class="text-center text-muted">No se encontraron alumnos.</p>
       </div>
+<div>
+  <h3> Evento mouseenter y mouseleave </h3>
+      <div class="text-center" style="color: #ffff; width: 300px; height: 200px; background-color: black; text-align: center; padding: 15px; border-radius: 14px;"
+      @mouseenter="mostrarMensaje" @mouseleave="ocultarMensaje">
+      <p>Pase el Mouse</p>
+      <p>{{ msg }}</p>
+
+      </div>
+    </div>
     </div>
   </template>
-  
+
+  <script>
+  export default {    
+ data() {
+      return {
+        msg: ''
+      };
+    },
+  methods: {
+    Evento() {
+       alert("Evento Click")
+        
+      },
+  mostrarMensaje(){
+  this.msg ="Mostrar Mensaje"
+ },
+ ocultarMensaje(){
+  this.msg ="Ocultar Mensaje"
+ }
+ 
+}
+  }
+</script>
   <script setup>
   import { ref } from 'vue';
-  
-
   const alumnos = ref([
     { nombre: 'Juan Pérez', carrera: 'ISC' },
     { nombre: 'María Gómez', carrera: 'ISC' },
@@ -60,15 +89,11 @@
     { nombre: 'Ana López', carrera: 'IM' },
     { nombre: 'Luis Fernández', carrera: 'ISC' },
   ]);
-  
-
   const selectedCarrera = ref('');
   const nuevoAlumno = ref({ nombre: '', carrera: 'ISC' });
   
-  
   const filteredAlumnos = ref(alumnos.value);
   
- 
   const filtrarAlumnos = () => {
     if (selectedCarrera.value) {
       filteredAlumnos.value = alumnos.value.filter(
@@ -87,13 +112,11 @@
         alert("Alumno Agregado Correctamente");
     }
     filtrarAlumnos();
-  
-   
     nuevoAlumno.value = { nombre: '', carrera: 'ISC' };
   };
 
-  const Evento= () => {
-
+  const Evento2= () => {
+  
 };
   </script>
   
