@@ -1,65 +1,106 @@
 <template>
-    <div class="product-card">
-      <img :src="image" :alt="name" class="product-image" />
-      <h2>{{ name }}</h2>
-      <p>{{ description }}</p>
-      <p class="price">$ {{ price }}</p>
-      <button @click="addToCart">🛒 Agregar al carrito</button>
+  <div class="product-card">
+    <img :src="image" alt="Imagen del producto" />
+    <div class="info">
+      <div class="name">{{ name }}</div>
+      <div class="description">{{ description }}</div>
+      <div class="price">${{ price }}</div>
+      <div class="buttons">
+        <button class="add-to-cart">Añadir al carrito</button>
+        <button class="view-details">Ver detalles</button>
+      </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    props: {
-      name: String,
-      description: String,
-      price: Number,
-      image: String
-    },
-    methods: {
-      addToCart() {
-        alert(`"${this.name}" agregado al carrito.`);
-      }
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    width: 250px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ProductCard",
+  props: {
+    name: String,
+    description: String,
+    price: Number,
+    image: String
   }
-  
-  .product-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #28a745;
-  }
-  
-  button {
-    background: #007bff;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  </style>
-  
+};
+</script>
+
+<style scoped>
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* Ajustar la altura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px; /* Asegurar que la imagen tenga una altura consistente */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.product-card .name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-card .price {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.product-card .description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.product-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-card .buttons button {
+  background-color:#28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+.product-card .buttons .view-details {
+  background-color:#ffc107;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .buttons button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+.product-card .buttons button:focus {
+  outline: none; /* Eliminar borde al hacer clic */
+}
+</style>

@@ -5,7 +5,7 @@
       <Sidebar />
       <main class="content">
         <slot></slot> 
-        <Horario /> 
+        <list /> 
       </main>
       <Footer />
     </div>
