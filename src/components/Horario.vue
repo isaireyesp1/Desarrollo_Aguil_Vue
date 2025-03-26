@@ -52,6 +52,7 @@
   .horario {
     margin: 20px;
     font-family: Arial, sans-serif;
+    margin-left: 250px;
   }
   
   h1 {

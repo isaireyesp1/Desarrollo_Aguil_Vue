@@ -32,7 +32,9 @@ header {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #eee;
-  width: 130%; /* Hace que el header ocupe todo el ancho disponible */
+  width: 100%; /* Hace que el header ocupe todo el ancho disponible */
+  margin-left: 100px;
+
 }
   
   .logo {
