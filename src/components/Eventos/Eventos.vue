@@ -46,6 +46,7 @@
       <div v-else>
         <p class="text-center text-muted">No se encontraron alumnos.</p>
       </div>
+      <center>
 <div>
   <h3> Evento mouseenter y mouseleave </h3>
       <div class="text-center" style="color: #ffff; width: 300px; height: 200px; background-color: black; text-align: center; padding: 15px; border-radius: 14px;"
@@ -55,6 +56,7 @@
 
       </div>
     </div>
+  </center>
     </div>
   </template>
 
