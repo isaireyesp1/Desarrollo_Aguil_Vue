@@ -34,13 +34,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px; /* Ajustar la altura */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 350px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .product-card img {
   width: 100%;
-  height: 180px; /* Asegurar que la imagen tenga una altura consistente */
+  height: 180px; 
   object-fit: cover;
   border-radius: 4px;
 }
@@ -97,10 +97,10 @@ export default {
 }
 
 .product-card .buttons button:hover {
-  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+  background-color: #0056b3; 
 }
 
 .product-card .buttons button:focus {
-  outline: none; /* Eliminar borde al hacer clic */
+  outline: none; 
 }
 </style>

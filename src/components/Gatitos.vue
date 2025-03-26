@@ -19,8 +19,6 @@ import Card from "./Card.vue";
     </div>
   </template>
   
-
-  
   <style scoped>
   html, body {
     height: 100%;

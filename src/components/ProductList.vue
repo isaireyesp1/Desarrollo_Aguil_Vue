@@ -47,10 +47,10 @@ export default {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 productos por fila */
-  gap: 20px; /* Espacio entre los productos */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
   margin-top: 20px;
-  padding-left: 100px; /* Mueve la lista de productos hacia la derecha */
+  padding-left: 100px; 
 }
 
 .product-card {
@@ -61,20 +61,20 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px; /* Altura fija para las tarjetas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 350px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-10px); /* Efecto de elevación */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .product-card img {
-  width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
-  height: 200px; /* Fija la altura de las imágenes */
-  object-fit: cover; /* Asegura que la imagen no se distorsione */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 4px;
 }
 
