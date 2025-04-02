@@ -1,0 +1,97 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #555;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Se asegura de que el contenido esté apilado verticalmente */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 1.5em;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 1; /* Esto asegura que el contenido principal se expanda para ocupar el espacio disponible */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #333;
+    background-color: #fff;
+  }
+  a:hover {
+    color: #777;
+  }
+  button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
