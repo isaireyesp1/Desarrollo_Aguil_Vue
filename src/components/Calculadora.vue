@@ -14,10 +14,8 @@
         </div>
   
         <div class="d-flex justify-content-between">
-          <button class="btn btn-primary" @click="calcular('+')">+</button>
-          <button class="btn btn-danger" @click="calcular('-')">-</button>
-          <button class="btn btn-success" @click="calcular('*')">×</button>
-          <button class="btn btn-warning" @click="calcular('/')">÷</button>
+         <center> <button center class="btn btn-primary" @click="calcular('+')">+</button></center>
+
         </div>
   
         <h3 class="text-center mt-4">Resultado: {{ resultado }}</h3>

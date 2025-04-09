@@ -40,7 +40,7 @@ export default {
   <div class="container d-flex justify-content-center mt-4" style="height: 100vh;">
     <div class="card p-3" style="width: 300px;">
       <div class="card-body">
-        <h6 class="text-center">Calculadora Mejorada</h6>
+        <h6 class="text-center">Calculadora V2</h6>
         <input type="text" class="form-control text-end mb-3" v-model="display" disabled>
         
         <div class="d-grid gap-2">
